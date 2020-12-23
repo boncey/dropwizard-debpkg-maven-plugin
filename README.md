@@ -101,6 +101,7 @@ Below is the default configuration. The only required parameter is the `configTe
         <startScript>/usr/bin/${project.artifactId}</startScript><!-- Optional Path to the start script, once deployed. -->
         <configFile>/etc/${project.artifactId}.yml</configFile><!-- Optional: Path to your service configuration, once deployed. -->
         <jvmConfigFile>/etc/${project.artifactId}.jvm.conf</jvmConfigFile><!-- Optional: Path to your JVM parameter configuration, once deployed. -->
+        <javaBinPath></javaBinPath><!-- Optional: Path to your Java binary, once deployed. -->
         <logDirectory>/var/log/${project.artifactId}</logDirectory><!-- Optional: Directory for service logs, once deployed. -->
         <upstartFile>/etc/init/${project.artifactId}.conf</upstartFile><!-- Optional: Path to the service upstart configuration, once deployed. -->
         <systemVFile>/etc/init.d/${project.artifactId}</systemVFile><!-- Optional: Path to the service init configuration, once deployed. -->

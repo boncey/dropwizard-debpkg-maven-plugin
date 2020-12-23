@@ -42,10 +42,10 @@
     </scm>
 
     <properties>
-        <jdk.version>1.7</jdk.version>
+        <jdk.version>9</jdk.version>
 
         <maven-plugin-api.version>3.2.3</maven-plugin-api.version>
-        <maven-plugins.version>3.3</maven-plugins.version>
+        <maven-plugins.version>3.6.0</maven-plugins.version>
         <maven-plugin-tools.version>3.3</maven-plugin-tools.version>
         <maven-shared.version>1.2</maven-shared.version>
 

@@ -25,8 +25,7 @@ public class ApplicationValidator {
         this.artifactFile = artifactFile;
         this.log = log;
 
-        // Set parent to null to avoid pulling in SLF4J and other conflicts from our self
-        classLoader = new URLClassLoader(new URL[]{artifactFile.toURI().toURL()}, null);
+        classLoader = new URLClassLoader(new URL[]{artifactFile.toURI().toURL()}, ClassLoader.getPlatformClassLoader());
     }
 
     private Class<?> getMainClass() throws IOException, ClassNotFoundException {

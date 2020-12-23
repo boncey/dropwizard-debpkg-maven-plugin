@@ -6,7 +6,7 @@ import org.apache.maven.project.MavenProject;
 import com.google.common.base.Strings;
 
 public class PathConfiguration {
-    
+
     private MavenProject project;
 
     public void setProject(MavenProject project) {
@@ -24,6 +24,9 @@ public class PathConfiguration {
 
     @Parameter
     private String jvmConfigFile = null;
+
+    @Parameter
+    private String javaBinPath = null;
 
     @Parameter
     private String logDirectory = null;
@@ -106,5 +109,13 @@ public class PathConfiguration {
 
     public void setSystemDFile(final String systemDFile) {
         this.systemDFile = systemDFile;
+    }
+
+    public String getJavaBinPath() {
+        return Strings.isNullOrEmpty(javaBinPath) ? "java" : javaBinPath;
+    }
+
+    public void setJavaBinPath(String javaBinPath) {
+        this.javaBinPath = javaBinPath;
     }
 }
